@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just For You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main-content">
+    <div id="overlay">
+      <h1 class="neon-title">Welcome, Sajjal</h1>
+      <p class="neon-subtitle">A surprise is coming your way...</p>
+      <p id="countdown" class="countdown-timer">30</p>
+    </div>
+
+    <div id="birthday-prompt" class="hidden">
+      <p class="neon-subtitle">Enter your birthday (DD/MM/YYYY):</p>
+      <input type="text" id="birthday-input" placeholder="e.g. 28/01/2005" />
+      <button onclick="checkBirthday()">Unlock Message</button>
+      <p id="error-msg" class="error-text"></p>
+    </div>
+
+    <div id="love-message" class="hidden">
+      <h2 class="neon-title">To the one who unknowingly stole my heart...</h2>
+      <p class="love-text">
+        From the very first glance, you unknowingly changed my world.  
+        I may not have had the courage to say this until now,  
+        but every moment I spent thinking of you felt like magic.  
+        Sajjal, I love you — purely, deeply, and honestly.  
+        This page, these words, these feelings... are all for you.
+      </p>
+    </div>
+
+    <div id="photo-gallery" class="photo-slider hidden">
+      <img src="Photos/Sajjal1.jpg" />
+      <img src="Photos/Sajjal2.jpg" />
+      <img src="Photos/Sajjal3.jpg" />
+    </div>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="Music/agar_tum_saath_ho.mp3" type="audio/mp3" />
+    <source src="Music/tum_hi_ho.mp3" type="audio/mp3" />
+    <source src="Music/raabta.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
